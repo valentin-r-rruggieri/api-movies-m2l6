@@ -1,0 +1,31 @@
+{
+  "name": "api-movies-m2l6",
+  "version": "1.0.0",
+  "description": "API REST de peliculas con validacion, error handler y tests automatizados para M2L6.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "test:db": "node db/test-connection.js"
+  },
+  "keywords": [
+    "express",
+    "postgresql",
+    "pg",
+    "rest-api"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "pg": "^8.12.0"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^4.1.6",
+    "supertest": "^7.2.2",
+    "vitest": "^4.1.6"
+  }
+}
